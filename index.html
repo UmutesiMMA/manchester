@@ -8,14 +8,54 @@
 </head>
 <body class="box-border">
     <div id="header"></div>
-    <main class="mx-7">
-        <div class="relative mb-5">
-            <img class="w-auto" src="https://www.manchester.ac.uk/Magazine-Nazir-1400x450.jpg" >
-            <div class="absolute top-32 left-24 space-y-3">
-                <p> Univesrity Magazine 2023</p>
-                <p>Our summer issue celebrates  the students, staff alumni embodying our six values as they make their mark on the world.</p>
-                <div class="p-3 bg-purple-600 w-24 whitespace-nowrap"><a>Read more</a></div>
+    <header class=" py-7 px-9 text-gray-500">
+        <div class="flex gap-64 lg:gap-20">
+            <div>
+                <img src="https://assets.manchester.ac.uk/corporate/images/design/logo-university-of-manchester.png" alt="">
             </div>
+            <div class="hidden lg:block">
+                <ul class="flex gap-9">
+                    <li><img class="w-[40px] " src="data:image/png;base64,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" alt=""></li>
+                    <li class="text-2xl ">Study</li>
+                    <li class="text-2xl ">Research</li>
+                    <li class="text-2xl ">Collaborate</li>
+                    <li class="text-2xl ">Discover</li>
+                    <li class="text-2xl ">Connect</li>
+                </ul>
+            </div>
+            <div class="hidden lg:block lg:flex border-[1.5px] border-gray-500 h-10 px-3 rounded-lg">
+                <div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 -30 110 110" aria-hidden="true" width="29" height="29"><path fill="#2E3644" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+                    s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+                    c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+                    s-17-7.626-17-17S14.61,6,23.984,6z"></path></svg>
+                </div>
+                <div class="text-[22px]">Search</div>
+            </div>
+            <div class="flex gap-2 lg:hidden">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 -30 110 110" aria-hidden="true" width="35" height="35"><path fill="#2E3644" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+                        s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+                        c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+                        s-17-7.626-17-17S14.61,6,23.984,6z"></path></svg>
+                </div>
+                <div class="mt-3">
+                    <img class="w-[25px] h-[20px]" src="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-1.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="mx-7">
+        <div class="lg:relative lg:mb-5 -mx-7">
+            <img class="w-auto" src="https://www.manchester.ac.uk/Magazine-Nazir-1400x450.jpg" >
+            <div class=" bg-slate-200 pb-12 lg:absolute top-32 left-24 space-y-3 lg:bg-transparent">
+                <div class="lg:bg-white lg:bg-opacity-40 p-4">
+                    <p class="text-2xl"> University Magazine 2023</p>                
+                    <p class="w-60 text-1xl">Our summer issue celebrates  the students, staff alumni embodying our six values as they make their mark on the world.</p>
+                </div>
+                <div class=" ml-6 rounded-md p-3 bg-purple-600 w-32 text-white whitespace-nowrap"><a>Read more &rarr;</a></div>
+            </div>
+        </div>
             <!-- Study section -->
             <p class="text-4xl my-5">Study</p>
             <div class="grid grid-cols-1 mb-8 lg:flex gap-8">
@@ -25,30 +65,29 @@
                             Course and programme finder                        
                         </div>
                         <div class=""> 
-                            <select name="year" class="mb-4 w-[34rem]">
+                            <select name="year" class="mb-4 p-2 rounded-md  w-[31rem] lg:w-[34rem]">
                                 <option value="">Undergraduate (2024 entry)</option>
                                 <option value="">Undergraduate (2023 entry)</option>
                                 <option value="">Taught master's</option>
                                 <option value="">Postgraduate research </option>
                             </select><br>
                             <label>
-                                <input class="w-[34rem]" type="text" placeholder="Enter keywords">
+                                <input class=" w-[31rem] p-2 rounded-md lg:w-[34rem]" type="text" placeholder="Enter keywords">
                             </label><br>
-                            <button class="bg-slate-700 w-[34rem] mt-4">Search</button>
+                            <button class="bg-slate-700 mt-4 w-[31rem] p-2 rounded-md lg:w-[34rem] ">Search</button>
                         </div>
                         <div>
                             <p class="text-white mb-2"> A-Z lists:</p>
-                            <ul class="text-yellow-600">
+                            <ul class="text-yellow-400">
                                 <li><a>&raquo; Undergraduate courses (2024 entry)</a></li>
                                 <li><a>&raquo; Undergraduate courses (2023 entry)</a></li>
                                 <li><a>&raquo; Taught master's courses</a></li>
-                                <li><a>&raquo; Postgraduate research areas</a></li>
-    
+                                <li><a>&raquo; Postgraduate research areas</a></li>    
                             </ul>
                         </div>                        
                     </div>
                 </div>
-                <div class="bg-slate-200 p-12 lg:py-8">
+                <div class="bg-slate-200 p-12">
                     <p class="text-3xl mb-3">Undergraduate prospectus</p>
                     <p class="text-xl">Explore our online prospectus to discover how you make your mark at Manchester</p>
                     <p class="text-purple-700 pt-4">Read more &rightarrow;</p>
@@ -57,7 +96,7 @@
         </div>
         <!-- discover -->
 
-        <div class="bg-slate-200 p-9 mb-9">
+        <div class="bg-slate-200 p-9 mb-9 -mx-7">
             <p class="text-3xl mb-7"> Discover</p>
             <div class="flex gap-40">
                 <div ><a class="lg:flex">
@@ -103,7 +142,7 @@
             </div>
         </div>
         <!-- hidden on small screen, visible on large -->
-        <div class="hidden lg:block bg-gray-200 p-6 pb-20">
+        <div class="hidden lg:block bg-gray-200 p-6 pb-20 -mx-7 pl-10 ">
             <p class="text-3xl mb-10">Explore manchester</p>
             <div class="grid grid-cols-3">
                 
@@ -146,7 +185,7 @@
         </div>
     </main>
     <footer class="bg-black text-white p-20">
-        <div class="grid grid-cols-3 gap-8 mb-9 pb-12 border-b-2">
+        <div class="grid lg:gap-8 mb-9 pb-12 border-b-2 grid-cols-3 ">
             <div >
                 <ul class="space-y-5">
                     <li>Contact Us</li>
@@ -160,14 +199,14 @@
                     <li><a>The University of Manchester Oxford Rd Manchester M13 9PL UK</a></li>
                 </ul>
             </div>
-            <div class="space-y-5">
+            <div class=" border-gray-50 p-5 space-y-5">
                 <p>Connect with us</p>
-                <ul class="flex flex-wrap gap-5">
+                <ul class="flex flex-wrap gap-5 lg:flex-row">
                     <li><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-facebook-50.png" alt=""></li>
                     <li><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-twitter-50.png" alt=""></li>
                     <li><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-youtube-50.png" alt=""></li>
                     <li><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-instagram-50.svg" alt=""></li>
-                    <li><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-tiktok.svg" alt=""></li>
+                    <li><img class="w-[50px] h-[50px]" src="https://assets.manchester.ac.uk/phase1/templates/images/icon-tiktok.svg" alt=""></li>
                     <li><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-linkedin-R-54.png" alt=""></li>
                 </ul>
                 <p>Social media directory</p>
