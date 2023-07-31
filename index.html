@@ -6,19 +6,185 @@
     <link rel="stylesheet" href="/build/output.css">
     <title>The univesrity of Manchester</title>
 </head>
-<body>
+<body class="box-border">
     <div id="header"></div>
-    <main>
-        <div class="relative">
-            <img href="" >
-            <div>
+    <main class="mx-7">
+        <div class="relative mb-5">
+            <img class="w-auto" src="https://www.manchester.ac.uk/Magazine-Nazir-1400x450.jpg" >
+            <div class="absolute top-32 left-24 space-y-3">
                 <p> Univesrity Magazine 2023</p>
                 <p>Our summer issue celebrates  the students, staff alumni embodying our six values as they make their mark on the world.</p>
-                <div class="p-3 bg-purple-600 w-24 whitespace-nowrap">Read more</div>
+                <div class="p-3 bg-purple-600 w-24 whitespace-nowrap"><a>Read more</a></div>
             </div>
+            <!-- Study section -->
+            <p class="text-4xl my-5">Study</p>
+            <div class="grid grid-cols-1 mb-8 lg:flex gap-8">
+                <div>
+                    <div class="bg-purple-600 pl-6 space-y-6 py-7 mb-9 lg:w-[50rem] ">
+                        <div class="text-white text-lg">
+                            Course and programme finder                        
+                        </div>
+                        <div class=""> 
+                            <select name="year" class="mb-4 w-[34rem]">
+                                <option value="">Undergraduate (2024 entry)</option>
+                                <option value="">Undergraduate (2023 entry)</option>
+                                <option value="">Taught master's</option>
+                                <option value="">Postgraduate research </option>
+                            </select><br>
+                            <label>
+                                <input class="w-[34rem]" type="text" placeholder="Enter keywords">
+                            </label><br>
+                            <button class="bg-slate-700 w-[34rem] mt-4">Search</button>
+                        </div>
+                        <div>
+                            <p class="text-white mb-2"> A-Z lists:</p>
+                            <ul class="text-yellow-600">
+                                <li><a>&raquo; Undergraduate courses (2024 entry)</a></li>
+                                <li><a>&raquo; Undergraduate courses (2023 entry)</a></li>
+                                <li><a>&raquo; Taught master's courses</a></li>
+                                <li><a>&raquo; Postgraduate research areas</a></li>
+    
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="bg-slate-200 p-12 lg:py-8">
+                    <p class="text-3xl mb-3">Undergraduate prospectus</p>
+                    <p class="text-xl">Explore our online prospectus to discover how you make your mark at Manchester</p>
+                    <p class="text-purple-700 pt-4">Read more &rightarrow;</p>
+                </div>
+            </div>
+        </div>
+        <!-- discover -->
 
+        <div class="bg-slate-200 p-9 mb-9">
+            <p class="text-3xl mb-7"> Discover</p>
+            <div class="flex gap-40">
+                <div ><a class="lg:flex">
+                    <div><img class="w-[75px] h-[73px] rounded-[50px]" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQvMiP5Ygp0lOjbF1WuCXFsSwGKAxdIXVw6hzt7MR0hbPsh0fl"></div>
+                    <div class="mt-6">
+                        <p>Maps</p>
+                        <p class="hidden lg:block">Come and visit us</p>
+                    </div>
+                </a></div>
+                <div><a class="lg:flex">
+                    <div><img class="w-[75px] h-[73px] rounded-[50px]" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQvMiP5Ygp0lOjbF1WuCXFsSwGKAxdIXVw6hzt7MR0hbPsh0fl"></div>
+                    <div class="mt-6">
+                        <p>Events</p>
+                        <p class="hidden lg:block">What's on at the University</p>
+                    </div>
+                </a></div>
+                <div><a class="lg:flex">
+                    <div><img class="w-[75px] h-[73px] rounded-[50px]" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQvMiP5Ygp0lOjbF1WuCXFsSwGKAxdIXVw6hzt7MR0hbPsh0fl"></div>
+                    <div class="mt-6">
+                        <p>Heritage</p>
+                        <p class="hidden lg:block">Explore our past</p>
+                    </div>
+                </a></div>                
+            </div>
+        </div>
+        <!-- connect -->
+        <p class="text-3xl mb-10">Connect</p>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-10">
+            <div class="relative">
+                <img class="" src="https://www.manchester.ac.uk/Connect-Jobs.jpg">
+                <div class="absolute bg-white p-3 bottom-0 lg:bottom-12 ">Jobs</div>
+                <p class="hidden lg:block">We offer every kind of role imaginable. From local talent to global experts, we want to hear from you</p>
+            </div>
+            <div class="relative">
+                <img class="" src="https://www.manchester.ac.uk/Alumni.jpg">
+                <div class="absolute bg-white p-3 bottom-0 lg:bottom-12">Alumni</div>
+                <p class="hidden lg:block">We offer every kind of role imaginable. From local talent to global experts, we want to hear from you</p>
+            </div>
+            <div class="relative">
+                <img class="" src="https://www.manchester.ac.uk/Teachers-Careers.jpg">
+                <div class="absolute bg-white p-3 bottom-0 whitespace-nowrap lg:bottom-12">Teachers and careers advisers</div>
+                <p class="hidden lg:block ">We offer every kind of role imaginable. From local talent to global experts, we want to hear from you</p>
+            </div>
+        </div>
+        <!-- hidden on small screen, visible on large -->
+        <div class="hidden lg:block bg-gray-200 p-6 pb-20">
+            <p class="text-3xl mb-10">Explore manchester</p>
+            <div class="grid grid-cols-3">
+                
+                <div class="relative col-span-2">
+                    <img src="https://www.manchester.ac.uk/jodrell-050819.jpg" alt="">
+                    <div class="absolute bottom-[20.5rem] -left-1 bg-gray-200 w-[35rem] p-5">
+                        <p>Jodrell Bank</p>
+                        <p>Our Jodrell Bank Observatory (a UNESCO World Heritage Site) is home to the giant Lovell Telescope.</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://www.manchester.ac.uk/John-Rylands-Library-Deansgate-154-100320-edited.jpg" alt="">
+                    <div class="absolute -bottom-1 -left-1 w-[180px] bg-gray-200">
+                        <p>John Rylands Research Institute and Library</p>
+                        <p>Our Grade I-listed, neo-Gothic library houses the University's Special Collections. </p>
+                    </div>
+                </div>
+                <div class="relative mt-[-290px]">
+                    <img src="https://www.manchester.ac.uk/Manchester-Museum-180320-edited.jpg" alt="">
+                    <div class="absolute -bottom-2 -left-1 bg-gray-200 w-[185px] p-7">
+                        <p>Manchester Museum</p>
+                        <p>With dinosaur skeletons and mummies from Ancient Egypt, Manchester Museum's collection of more than 4 million objects spans millennia.</p>
+                    </div>
+                </div>
+                <div class="relative mt-[-290px]">
+                    <img src="https://www.manchester.ac.uk/manchester-christmas-markets3.jpg" alt="">
+                    <div class="absolute bottom-[20rem] -left-2 p-4 bg-gray-200">
+                        <p>The city of Manchester</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="relative col-start-2 col-end-4 mt-[-287px]">
+                    <img src="https://www.manchester.ac.uk/the-Whitworth-180320-edited.jpg" alt="">
+                    <div class="absolute -bottom-1 -left-1 w-[380px] p-5 bg-gray-200">
+                        <p>The Whitworth</p>
+                        <p>Our art gallery is home to more than 55,000 works of art, ranging from textiles to some of the most famous British watercolours.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <footer></footer>
+    <footer class="bg-black text-white p-20">
+        <div class="grid grid-cols-3 gap-8 mb-9 pb-12 border-b-2">
+            <div >
+                <ul class="space-y-5">
+                    <li>Contact Us</li>
+                    <li>+44 (0) 161 306 6000</li>
+                    <li>contact details</li>
+                </ul>
+            </div>
+            <div >
+                <ul class="space-y-5">
+                    <li>Find Us</li>
+                    <li><a>The University of Manchester Oxford Rd Manchester M13 9PL UK</a></li>
+                </ul>
+            </div>
+            <div class="space-y-5">
+                <p>Connect with us</p>
+                <ul class="flex flex-wrap gap-5">
+                    <li><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-facebook-50.png" alt=""></li>
+                    <li><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-twitter-50.png" alt=""></li>
+                    <li><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-youtube-50.png" alt=""></li>
+                    <li><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-instagram-50.svg" alt=""></li>
+                    <li><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-tiktok.svg" alt=""></li>
+                    <li><img src="https://assets.manchester.ac.uk/phase1/templates/images/icon-linkedin-R-54.png" alt=""></li>
+                </ul>
+                <p>Social media directory</p>
+            </div>
+        </div>
+        <div >
+            <ul class="flex flex-wrap gap-5">
+                <li><a>Disclaimer</a></li>
+                <li><a>Data Protection</a></li>
+                <li><a>Copyright notice</a></li>
+                <li><a>Web accessibility</a></li>
+                <li><a>Freedom of information</a></li>
+                <li><a>Charitable status</a></li>
+                <li><a>Royal Charter Number:RC000797</a></li>
+
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
